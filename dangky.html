@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin đăng ký</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #e9e9e9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container{
+            width: 850px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        
+        .header{
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .form-box{
+            padding: 30px;
+        }
+
+        .form-group{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group label{
+            width: 180px;
+            font-size: 16px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea{
+            flex: 1;
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            padding: 8px;
+            font-size: 15px;
+        }
+
+        .radio-group,
+        .checkbox-group{
+            flex: 1;
+        }
+
+        textarea{
+            border: 1px solid black !important;
+            resize: none;
+        }
+
+        .btn-group{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        
+        .btn{
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin: 0 10px;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn:hover{
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            Thông tin đăng ký
+        </div>
+
+        <div class="form-box">
+
+            <div class="form-group">
+                <label>Họ tên:</label>
+                <input type="text" placeholder="Nhập họ tên">
+            </div>
+
+            <div class="form-group">
+                <label>Ngày sinh:</label>
+                <input type="date">
+            </div>
+
+            <div class="form-group">
+                <label>Giới tính:</label>
+
+                <div class="radio-group">
+                    <input type="radio" name="gender"> Nam
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender"> Nữ
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Địa chỉ:</label>
+                <input type="text" placeholder="Nhập địa chỉ">
+            </div>
+
+            <div class="form-group">
+                <label>MSSV:</label>
+                <input type="text" placeholder="Nhập mã số sinh viên">
+            </div>
+
+            <div class="form-group">
+                <label>Lớp:</label>
+
+                <select>
+                    <option>DA25TT</option>
+                    <option>DA25TTA</option>
+                    <option>DA25TTB</option>
+                    <option>DA25TTC</option>
+                    <option>DA25TTD</option>
+                    <option>DA25TTNT</option>
+                    
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Số điện thoại:</label>
+                <input type="tel" placeholder="Nhập số điện thoại">
+            </div>
+
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" placeholder="Nhập email">
+            </div>
+
+            <div class="form-group">
+                <label>Ảnh đại diện:</label>
+                <input type="file">
+            </div>
+
+            <div class="form-group">
+                <label>Sở trường:</label>
+
+                <div class="checkbox-group">
+                    <input type="checkbox"> Thiết kế web
+                    <input type="checkbox"> Lập trình web
+                    <input type="checkbox"> Thành thạo tiếng Trung
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Mô tả sơ lược:</label>
+                <textarea rows="6"></textarea>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn">Hủy bỏ</button>
+                <button class="btn">Đăng ký</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
